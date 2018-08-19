@@ -17,3 +17,18 @@ function distanceTravelledInFeet (start, destination) {
     return (destination - start) * 264;
   }
 }
+
+function calculatesFarePrice (feet) {
+  if (feet <= 400) {
+    return "Free ride!";
+  }
+  else if (400 < feet && feet > 2000) {
+    return (.02 * feet);
+  }
+  else if (2000 < feet && feet > 2500) {
+    return "Standard rate applies.";
+  }
+  else {
+    return "Cannot travel that far"
+  }
+}
