@@ -18,17 +18,19 @@ function distanceTravelledInFeet (start, destination) {
   }
 }
 
-function calculatesFarePrice (feet) {
-  if (feet <= 400) {
-    return "Free ride!";
+function calculatesFarePrice (start, destination) {
+  const distance = distanceTravelledInFeet (start, destination); 
+  
+  if (distance <= 400) {
+    return 0;
   }
-  else if (400 < feet && feet > 2000) {
-    return (.02 * feet);
+  else if (distance > 400 && distance <= 2000) {
+    return .02 * (distance - 400);
   }
-  else if (2000 < feet && feet > 2500) {
-    return "25 dollars";
+  else if (distance > 2000 && distance < 2500) {
+    return 25;
   }
   else {
-    return "Cannot travel that far"
+    return "Cannot travel that far";
   }
 }
