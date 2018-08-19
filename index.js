@@ -1,9 +1,7 @@
-function distanceFromHqInBlocks (blocks) {
-let blocks = 42 - pickUpLocation
-  if (blocks = 42) {
-    return "0 blocks"
-  } else if (blocks < 42) {
-    return ""
+function distanceFromHqInBlocks (blockNumber) {
+  if (blockNumber > 42) {
+    return blockNumber - 42
+  } else {
+    return 42 - blockNumber;
   }
-
 }
