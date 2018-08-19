@@ -19,8 +19,8 @@ function distanceTravelledInFeet (start, destination) {
 }
 
 function calculatesFarePrice (start, destination) {
-  const distance = distanceTravelledInFeet (start, destination); 
-  
+  const distance = distanceTravelledInFeet (start, destination);
+
   if (distance <= 400) {
     return 0;
   }
@@ -31,6 +31,6 @@ function calculatesFarePrice (start, destination) {
     return 25;
   }
   else {
-    return "Cannot travel that far";
+    return "cannot travel that far";
   }
 }
