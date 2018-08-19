@@ -26,7 +26,7 @@ function calculatesFarePrice (feet) {
     return (.02 * feet);
   }
   else if (2000 < feet && feet > 2500) {
-    return "Standard rate applies.";
+    return "25 dollars";
   }
   else {
     return "Cannot travel that far"
